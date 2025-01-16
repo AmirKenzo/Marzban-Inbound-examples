@@ -1,0 +1,65 @@
+{
+    "tag": "VLESS-XHTTP-TLS",
+    "listen": "0.0.0.0",
+    "port": 52400,
+    "protocol": "vless",
+    "settings": {
+        "clients": [],
+        "decryption": "none",
+        "fallbacks": []
+    },
+    "streamSettings": {
+        "network": "xhttp",
+        "security": "tls",
+        "externalProxy": [],
+        "tlsSettings": {
+            "serverName": "",
+            "minVersion": "1.2",
+            "maxVersion": "1.3",
+            "cipherSuites": "",
+            "rejectUnknownSni": false,
+            "disableSystemRoot": false,
+            "enableSessionResumption": false,
+            "certificates": [
+                {
+                    "certificateFile": "/var/lib/marzban/certs/fullchain.pem",
+                    "keyFile": "/var/lib/marzban/certs/key.pem",
+                    "ocspStapling": 3600,
+                    "oneTimeLoading": false,
+                    "usage": "encipherment",
+                    "buildChain": false
+                }
+            ],
+            "alpn": [
+                "h3",
+                "h2",
+                "http/1.1"
+            ],
+            "settings": {
+                "allowInsecure": false,
+                "fingerprint": "chrome"
+            }
+        },
+        "xhttpSettings": {
+            "path": "/",
+            "host": "",
+            "headers": {},
+            "scMaxBufferedPosts": 30,
+            "scMaxEachPostBytes": "1000000",
+            "noSSEHeader": false,
+            "xPaddingBytes": "100-1000",
+            "mode": "auto"
+        }
+    },
+    "sniffing": {
+        "enabled": false,
+        "destOverride": [
+            "http",
+            "tls",
+            "quic",
+            "fakedns"
+        ],
+        "metadataOnly": false,
+        "routeOnly": false
+    }
+}

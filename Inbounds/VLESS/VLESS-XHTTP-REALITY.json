@@ -1,0 +1,66 @@
+{
+    "tag": "VLESS-XHTTP-REALITY",
+    "listen": "0.0.0.0",
+    "port": 23308,
+    "protocol": "vless",
+    "settings": {
+        "clients": [],
+        "decryption": "none",
+        "fallbacks": []
+    },
+    "streamSettings": {
+        "network": "xhttp",
+        "security": "reality",
+        "externalProxy": [],
+        "realitySettings": {
+            "show": false,
+            "xver": 0,
+            "dest": "yahoo.com:443",
+            "serverNames": [
+                "yahoo.com",
+                "www.yahoo.com"
+            ],
+            "privateKey": "aJmT7FBCr8PuPk8ZlXaDjAdAP70ObNKH-vXu_15DjC8",
+            "minClient": "",
+            "maxClient": "",
+            "maxTimediff": 0,
+            "shortIds": [
+                "b3",
+                "b408ee2f83a8",
+                "7cb7ad2e83f550a0",
+                "a1009382",
+                "8dab",
+                "daa10b",
+                "52f2852b1ef027",
+                "0a77eb535d"
+            ],
+            "settings": {
+                "publicKey": "I_6PSo1ZySfCbOUxZ5wzp4dKywPTZLysUdjUvdNWaHs",
+                "fingerprint": "chrome",
+                "serverName": "",
+                "spiderX": "/"
+            }
+        },
+        "xhttpSettings": {
+            "path": "/",
+            "host": "",
+            "headers": {},
+            "scMaxBufferedPosts": 30,
+            "scMaxEachPostBytes": "1000000",
+            "noSSEHeader": false,
+            "xPaddingBytes": "100-1000",
+            "mode": "auto"
+        }
+    },
+    "sniffing": {
+        "enabled": false,
+        "destOverride": [
+            "http",
+            "tls",
+            "quic",
+            "fakedns"
+        ],
+        "metadataOnly": false,
+        "routeOnly": false
+    }
+}
